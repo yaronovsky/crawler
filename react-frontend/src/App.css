@@ -1,0 +1,41 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+
+}
+
+.app form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: baseline;
+    text-align: center;
+    gap: 1rem;
+}
+
+.app form label {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.app form textarea {
+    min-width: 100%;
+}
+
+.app form input {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}

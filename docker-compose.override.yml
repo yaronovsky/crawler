@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  node-backend:
+    build:
+      context: ./node-backend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./node-backend:/usr/src/app
+    environment:
+      - NODE_ENV=development
+      - PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+
+  react-frontend:
+    build:
+      context: ./react-frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./react-frontend:/app
+
+
+  redis:
+    command: redis-server

@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  node-backend:
+    build:
+      context: ./node-backend
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - REDIS_HOST=redis
+    depends_on:
+      - redis
+  react-frontend:
+    build:
+      context: ./react-frontend
+      dockerfile: Dockerfile.prod
+    ports:
+      - "3001:3001"
+    depends_on:
+      - node-backend
+  redis:
+    image: "redis:alpine"
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:
