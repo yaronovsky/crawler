@@ -1,3 +1,5 @@
+**Since I am using an M1 Mac I had to use arm packages for Puppeteer**
+
 To launch this project you have to navigate to:
 
 ```bash 
@@ -20,7 +22,7 @@ at [http://localhost:3000](http://localhost:3000)
 Keep in mind this is a highly MVP project
 Many practices here are pure for the project:
 Such as:
- * Flat Redis key system
- * CORS enabled for all origins
- * Project Structure
+* Flat Redis key system
+* CORS enabled for all origins
+* Project Structure
 
