@@ -25,4 +25,5 @@ Such as:
 * Flat Redis key system
 * CORS enabled for all origins
 * Project Structure
+* No Tailwind or fancy frontend, the task was about writing a service
 
